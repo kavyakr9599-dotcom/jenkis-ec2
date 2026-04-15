@@ -15,7 +15,7 @@ pipeline {
                         cd jenkis-ec2
                         git pull origin main
                     else
-                        git clone https://github.com/HarshithNA/jenkis-ec2
+                        https://github.com/kavyakr9599-dotcom/jenkis-ec2.git
                         cd jenkis-ec2
                     fi
 
