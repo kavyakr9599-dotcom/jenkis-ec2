@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Deploy Nginx App') {
             steps {
-                sshagent(['554c1d0c-6228-4462-a05e-d0470ac10300']) {
+                sshagent(['b7a1f921-2c73-45bd-9d0e-954504ea436a']) {
                     sh '''
-                    ssh -o StrictHostKeyChecking=no ubuntu@44.213.122.239<< 'EOF'
+                    ssh -o StrictHostKeyChecking=no ubuntu@16.171.15.248<< 'EOF'
 
                     cd /home/ubuntu
 
@@ -15,7 +15,7 @@ pipeline {
                         cd jenkis-ec2
                         git pull origin main
                     else
-                        git clone https://github.com/Chigich/jenkis-ec2.git
+                        git clone https://github.com/HarshithNA/jenkis-ec2
                         cd jenkis-ec2
                     fi
 
