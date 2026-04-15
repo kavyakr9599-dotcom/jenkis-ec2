@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Deploy Nginx App') {
             steps {
-                sshagent(['b7a1f921-2c73-45bd-9d0e-954504ea436a']) {
+                sshagent(['41acdb23-f798-4c7c-86d1-3126b5f82bda']) {
                     sh '''
-                    ssh -o StrictHostKeyChecking=no ubuntu@16.171.15.248<< 'EOF'
+                    ssh -o StrictHostKeyChecking=no ubuntu@98.94.82.118<< 'EOF'
 
                     cd /home/ubuntu
 
