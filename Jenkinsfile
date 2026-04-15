@@ -26,7 +26,7 @@ pipeline {
                     docker rm -f nginx-container || true
 
                     # Run new container
-                    docker run -d -p 80:80 --name nginx-container my-nginx-app
+                    docker run -d -p 80:8081 --name nginx-container my-nginx-app
 
                     echo "Nginx app deployed"
 
